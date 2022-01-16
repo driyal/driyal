@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2021 The Bitcoin Core developers
+// Copyright (c) 2009-2021 The DRiyal Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_UTIL_EPOCHGUARD_H
-#define BITCOIN_UTIL_EPOCHGUARD_H
+#ifndef DRIYAL_UTIL_EPOCHGUARD_H
+#define DRIYAL_UTIL_EPOCHGUARD_H
 
 #include <threadsafety.h>
 
@@ -98,4 +98,4 @@ public:
 
 #define WITH_FRESH_EPOCH(epoch) const Epoch::Guard PASTE2(epoch_guard_, __COUNTER__)(epoch)
 
-#endif // BITCOIN_UTIL_EPOCHGUARD_H
+#endif // DRIYAL_UTIL_EPOCHGUARD_H

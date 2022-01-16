@@ -1,9 +1,9 @@
-// Copyright (c) 2019-2021 The Bitcoin Core developers
+// Copyright (c) 2019-2021 The DRiyal Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_WALLETCONTROLLER_H
-#define BITCOIN_QT_WALLETCONTROLLER_H
+#ifndef DRIYAL_QT_WALLETCONTROLLER_H
+#define DRIYAL_QT_WALLETCONTROLLER_H
 
 #include <qt/sendcoinsrecipient.h>
 #include <support/allocators/secure.h>
@@ -155,4 +155,4 @@ public:
     void load();
 };
 
-#endif // BITCOIN_QT_WALLETCONTROLLER_H
+#endif // DRIYAL_QT_WALLETCONTROLLER_H

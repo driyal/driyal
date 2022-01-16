@@ -1,9 +1,9 @@
-// Copyright (c) 2021 The Bitcoin Core developers
+// Copyright (c) 2021 The DRiyal Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_SPEND_H
-#define BITCOIN_WALLET_SPEND_H
+#ifndef DRIYAL_WALLET_SPEND_H
+#define DRIYAL_WALLET_SPEND_H
 
 #include <consensus/amount.h>
 #include <wallet/coinselection.h>
@@ -145,4 +145,4 @@ bool CreateTransaction(CWallet& wallet, const std::vector<CRecipient>& vecSend, 
 bool FundTransaction(CWallet& wallet, CMutableTransaction& tx, CAmount& nFeeRet, int& nChangePosInOut, bilingual_str& error, bool lockUnspents, const std::set<int>& setSubtractFeeFromOutputs, CCoinControl);
 } // namespace wallet
 
-#endif // BITCOIN_WALLET_SPEND_H
+#endif // DRIYAL_WALLET_SPEND_H

@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2021 The Bitcoin Core developers
+// Copyright (c) 2009-2021 The DRiyal Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_WALLET_H
-#define BITCOIN_WALLET_WALLET_H
+#ifndef DRIYAL_WALLET_WALLET_H
+#define DRIYAL_WALLET_WALLET_H
 
 #include <consensus/amount.h>
 #include <fs.h>
@@ -941,4 +941,4 @@ bool RemoveWalletSetting(interfaces::Chain& chain, const std::string& wallet_nam
 bool DummySignInput(const SigningProvider& provider, CTxIn &tx_in, const CTxOut &txout, bool use_max_sig);
 } // namespace wallet
 
-#endif // BITCOIN_WALLET_WALLET_H
+#endif // DRIYAL_WALLET_WALLET_H

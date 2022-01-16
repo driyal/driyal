@@ -1,9 +1,9 @@
-// Copyright (c) 2021 The Bitcoin Core developers
+// Copyright (c) 2021 The DRiyal Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_POLICY_PACKAGES_H
-#define BITCOIN_POLICY_PACKAGES_H
+#ifndef DRIYAL_POLICY_PACKAGES_H
+#define DRIYAL_POLICY_PACKAGES_H
 
 #include <consensus/validation.h>
 #include <policy/policy.h>
@@ -47,4 +47,4 @@ bool CheckPackage(const Package& txns, PackageValidationState& state);
  */
 bool IsChildWithParents(const Package& package);
 
-#endif // BITCOIN_POLICY_PACKAGES_H
+#endif // DRIYAL_POLICY_PACKAGES_H

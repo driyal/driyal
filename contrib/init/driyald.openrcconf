@@ -1,0 +1,33 @@
+# /etc/conf.d/driyald: config file for /etc/init.d/driyald
+
+# Config file location
+#DRIYALD_CONFIGFILE="/etc/driyal/driyal.conf"
+
+# What directory to write pidfile to?  (created and owned by $DRIYALD_USER)
+#DRIYALD_PIDDIR="/var/run/driyald"
+
+# What filename to give the pidfile
+#DRIYALD_PIDFILE="${DRIYALD_PIDDIR}/driyald.pid"
+
+# Where to write driyald data (be mindful that the blockchain is large)
+#DRIYALD_DATADIR="/var/lib/driyald"
+
+# User and group to own driyald process
+#DRIYALD_USER="driyal"
+#DRIYALD_GROUP="driyal"
+
+# Path to driyald executable
+#DRIYALD_BIN="/usr/bin/driyald"
+
+# Nice value to run driyald under
+#DRIYALD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#DRIYALD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for driyald to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+DRIYALD_SIGTERM_TIMEOUT=600

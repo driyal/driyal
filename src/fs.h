@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2021 The Bitcoin Core developers
+// Copyright (c) 2017-2021 The DRiyal Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_FS_H
-#define BITCOIN_FS_H
+#ifndef DRIYAL_FS_H
+#define DRIYAL_FS_H
 
 #include <stdio.h>
 #include <string>
@@ -88,8 +88,7 @@ static inline auto quoted(const std::string& s)
 // Allow safe path append operations.
 static inline path operator+(path p1, path p2)
 {
-    p1 += std::move(p2);
-    return p1;
+	return p1.concat(p2);
 }
 
 // Disallow implicit std::string conversion for copy_file
@@ -243,4 +242,4 @@ template<> inline void formatValue(std::ostream&, const char*, const char*, int,
 template<> inline void formatValue(std::ostream&, const char*, const char*, int, const fs::path&) = delete;
 } // namespace tinyformat
 
-#endif // BITCOIN_FS_H
+#endif // DRIYAL_FS_H

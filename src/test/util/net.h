@@ -1,9 +1,9 @@
-// Copyright (c) 2020-2021 The Bitcoin Core developers
+// Copyright (c) 2020-2021 The DRiyal Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TEST_UTIL_NET_H
-#define BITCOIN_TEST_UTIL_NET_H
+#ifndef DRIYAL_TEST_UTIL_NET_H
+#define DRIYAL_TEST_UTIL_NET_H
 
 #include <compat.h>
 #include <netaddress.h>
@@ -167,4 +167,4 @@ private:
 
 std::vector<NodeEvictionCandidate> GetRandomNodeEvictionCandidates(int n_candidates, FastRandomContext& random_context);
 
-#endif // BITCOIN_TEST_UTIL_NET_H
+#endif // DRIYAL_TEST_UTIL_NET_H

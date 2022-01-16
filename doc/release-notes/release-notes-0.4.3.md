@@ -1,21 +1,21 @@
-bitcoind version 0.4.3 is now available for download at:
-http://luke.dashjr.org/programs/bitcoin/files/bitcoind-0.4.3/ (until Gavin uploads to SourceForge)
+driyald version 0.4.3 is now available for download at:
+http://luke.dashjr.org/programs/driyal/files/driyald-0.4.3/ (until Gavin uploads to SourceForge)
 
 This is a bugfix-only release based on 0.4.0.
 
-Please note that the wxBitcoin GUI client is no longer maintained nor supported. If someone would like to step up to maintain this, they should contact Luke-Jr.
+Please note that the wxDRiyal GUI client is no longer maintained nor supported. If someone would like to step up to maintain this, they should contact Luke-Jr.
 
 Please report bugs for the daemon only using the issue tracker at github:
-https://github.com/bitcoin/bitcoin/issues
+https://github.com/driyal/driyal/issues
 
 Stable source code is hosted at Gitorious:
-http://gitorious.org/bitcoin/bitcoind-stable/archive-tarball/v0.4.3#.tar.gz
+http://gitorious.org/driyal/driyald-stable/archive-tarball/v0.4.3#.tar.gz
 
 BUG FIXES
 
 Cease locking memory used by non-sensitive information (this caused a huge performance hit on some platforms, especially noticable during initial blockchain download).
 Fixed some address-handling deadlocks (client freezes).
-No longer accept inbound connections over the internet when Bitcoin is being used with Tor (identity leak).
-Use the correct base transaction fee of 0.0005 BTC for accepting transactions into mined blocks (since 0.4.0, it was incorrectly accepting 0.0001 BTC which was only meant to be relayed).
+No longer accept inbound connections over the internet when DRiyal is being used with Tor (identity leak).
+Use the correct base transaction fee of 0.0005 DRI for accepting transactions into mined blocks (since 0.4.0, it was incorrectly accepting 0.0001 DRI which was only meant to be relayed).
 Add new DNS seeds (maintained by Pieter Wuille and Luke Dashjr).
 

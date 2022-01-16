@@ -1,9 +1,9 @@
-// Copyright (c) 2015-2021 The Bitcoin Core developers
+// Copyright (c) 2015-2021 The DRiyal Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_SCHEDULER_H
-#define BITCOIN_SCHEDULER_H
+#ifndef DRIYAL_SCHEDULER_H
+#define DRIYAL_SCHEDULER_H
 
 #include <condition_variable>
 #include <functional>
@@ -146,4 +146,4 @@ public:
     size_t CallbacksPending();
 };
 
-#endif // BITCOIN_SCHEDULER_H
+#endif // DRIYAL_SCHEDULER_H
