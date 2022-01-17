@@ -16,7 +16,8 @@ $(package)_cppflags_mingw32=-DUNICODE -D_UNICODE
 endef
 
 define $(package)_preprocess_cmds
-  cp -f $(BASEDIR)/config.guess $(BASEDIR)/config.sub dist
+  cp -f $(BASEDIR)/config.guess $(BASEDIR)/config.sub dist && \
+  sed -i.old 's/WinIoCtl.h/winioctl.h/' src/dbinc/win_db.h
 endef
 
 define $(package)_config_cmds
