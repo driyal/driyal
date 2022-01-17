@@ -13,3 +13,6 @@ cd ..
 CONFIG_SITE=$PWD/depends/x86_64-pc-linux-gnu/share/config.site ./configure --with-incompatible-bdb
 make
 ```
+
+Building on Windows, see doc/build_windows.md for details.
+
